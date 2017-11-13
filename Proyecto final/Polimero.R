@@ -1,0 +1,7 @@
+1 CH3
+2 CH
+3 CH3
+4 CH2
+5 CH
+6 CH3
+7 CH3
