@@ -1,4 +1,5 @@
 setwd("C:/Users/Pablo/Desktop/sim/Proyecto final")
+ti <- Sys.time()
 grupos <- read.csv("P1.modelo",  header =  FALSE, stringsAsFactors = T)
 cantidad <- dim(grupos)[1]
 enlaces <- read.csv("enlaces1.modelo",  header =  FALSE, stringsAsFactors = F)
@@ -51,4 +52,6 @@ for (paso in 1:100) { # para cada paso de la simulacion
     break # y ya no se realizan mas pasos ya que todos los enlaces ya estan rotos
   }
 }
-
+tf <- Sys.time()
+t <- tf-ti
+print(t)
